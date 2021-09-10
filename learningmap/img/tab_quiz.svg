@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="19.84375mm"
+   height="19.84375mm"
+   viewBox="0 0 19.84375 19.84375"
+   version="1.1"
+   id="svg2261"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="tab_quiz.svg">
+  <defs
+     id="defs2255" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="17.794736"
+     inkscape:cy="-81.595673"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1345"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2258">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(36.380207,-48.197174)">
+    <rect
+       style="opacity:1;fill:#3ec8eb;fill-opacity:0.6;stroke:none;stroke-width:0.12328403"
+       id="rect893"
+       width="19.84375"
+       height="19.84375"
+       x="-36.380207"
+       y="48.197174" />
+    <g
+       aria-label="?"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.82166004px;line-height:1.25;font-family:Bevan;-inkscape-font-specification:'Bevan, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.32054147"
+       id="text960">
+      <path
+         d="m -28.355286,57.893663 q 2.479188,-1.120643 2.479188,-2.241287 0,-0.100169 -0.02504,-0.212859 -0.01878,-0.118951 -0.07513,-0.269205 -0.05008,-0.150254 -0.181557,-0.244162 -0.131472,-0.10017 -0.319289,-0.10017 -0.751269,0 -0.813875,1.014214 h -2.954992 q 0.08765,-1.414891 1.145685,-2.328935 1.064298,-0.914044 2.673267,-0.914044 1.058037,0 1.915736,0.375635 0.863959,0.375634 1.352284,1.045516 0.488325,0.663621 0.488325,1.490017 0,0.425719 -0.125211,0.807615 -0.118951,0.381895 -0.306769,0.676142 -0.187817,0.287986 -0.488324,0.557191 -0.294248,0.269205 -0.582234,0.457022 -0.281726,0.187817 -0.669882,0.375635 -0.381895,0.181556 -0.676142,0.300507 -0.287986,0.112691 -0.669882,0.244163 v 1.170728 h -2.17242 z m 1.120643,5.747209 q -0.745008,0 -1.239594,-0.419459 -0.494585,-0.425719 -0.494585,-1.145685 0,-0.707446 0.482064,-1.120644 0.488325,-0.413198 1.252115,-0.413198 0.795093,0 1.295939,0.413198 0.500847,0.413198 0.500847,1.120644 0,0.719966 -0.519628,1.145685 -0.513368,0.419459 -1.277158,0.419459 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.82166004px;font-family:Bevan;-inkscape-font-specification:'Bevan, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.32054147"
+         id="path815" />
+    </g>
+  </g>
+</svg>

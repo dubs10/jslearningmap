@@ -1,0 +1,11 @@
+The ThrowPropsPlugin.min.js file included here is just a dummy file.
+The real plugin requires licensing from GreenSock. 
+The plugin provides inertia on scrolling and map movement. 
+The map will also work without it. 
+
+If you don't have a license, delete the file and remove the 
+link to it in the index.html
+
+If you do have a licensed version, please put it here and replace the
+dummy file.
+

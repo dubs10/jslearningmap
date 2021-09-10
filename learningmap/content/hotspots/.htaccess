@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule "hs_(.*).json$" "hotspot_json.php?id=$1"
+

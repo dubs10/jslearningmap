@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=1280, height=900, user-scalable=no">
+   <title>Coltsfoot Vale</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="/files/theme/webfonts.css"><!-- Replace this with your own choice of webfonts -->
+   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons"><!-- Google icons used for audio modes -->
+   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+   <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+   <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/utils/Draggable.min.js'></script>
+   <script src='js/ThrowPropsPlugin.min.js'></script><!-- This needs a greensock licence from greensock.com. The game will run without it, without inertia on dragging and swiping -->
+   <script src='js/jquery-mousewheel.js'></script>
+   <script src='js/howler.core.min.js'></script>  
+   <script src='js/player.min.js'></script> 
+   <script  src="js/interactivemap.js"></script><!-- The interactive map game code -->
+   <script  src="js/go.js"></script><!-- Contains the configuration and launch for the interactive map -->
+</head>
+<body>
+   <div id="viewport">
+      <div id="loading"><p>Waking <span id="waitcount">the inhabitants</span></p><img class="spinner" alt="spinner" style="margin-top: 20px;" height="40" width="40" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA1IiBoZWlnaHQ9IjEwNSIgdmlld0JveD0iMCAwIDEwNSAxMDUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMCI+CiAgICA8Y2lyY2xlIGN4PSIxMi41IiBjeT0iMTIuNSIgcj0iMTIuNSI+CiAgICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbC1vcGFjaXR5IgogICAgICAgICBiZWdpbj0iMHMiIGR1cj0iMXMiCiAgICAgICAgIHZhbHVlcz0iMTsuMjsxIiBjYWxjTW9kZT0ibGluZWFyIgogICAgICAgICByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvY2lyY2xlPgogICAgPGNpcmNsZSBjeD0iMTIuNSIgY3k9IjUyLjUiIHI9IjEyLjUiIGZpbGwtb3BhY2l0eT0iLjUiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwtb3BhY2l0eSIKICAgICAgICAgYmVnaW49IjEwMG1zIiBkdXI9IjFzIgogICAgICAgICB2YWx1ZXM9IjE7LjI7MSIgY2FsY01vZGU9ImxpbmVhciIKICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+CiAgICA8L2NpcmNsZT4KICAgIDxjaXJjbGUgY3g9IjUyLjUiIGN5PSIxMi41IiByPSIxMi41Ij4KICAgICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsLW9wYWNpdHkiCiAgICAgICAgIGJlZ2luPSIzMDBtcyIgZHVyPSIxcyIKICAgICAgICAgdmFsdWVzPSIxOy4yOzEiIGNhbGNNb2RlPSJsaW5lYXIiCiAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9jaXJjbGU+CiAgICA8Y2lyY2xlIGN4PSI1Mi41IiBjeT0iNTIuNSIgcj0iMTIuNSI+CiAgICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbC1vcGFjaXR5IgogICAgICAgICBiZWdpbj0iNjAwbXMiIGR1cj0iMXMiCiAgICAgICAgIHZhbHVlcz0iMTsuMjsxIiBjYWxjTW9kZT0ibGluZWFyIgogICAgICAgICByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvY2lyY2xlPgogICAgPGNpcmNsZSBjeD0iOTIuNSIgY3k9IjEyLjUiIHI9IjEyLjUiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwtb3BhY2l0eSIKICAgICAgICAgYmVnaW49IjgwMG1zIiBkdXI9IjFzIgogICAgICAgICB2YWx1ZXM9IjE7LjI7MSIgY2FsY01vZGU9ImxpbmVhciIKICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+CiAgICA8L2NpcmNsZT4KICAgIDxjaXJjbGUgY3g9IjkyLjUiIGN5PSI1Mi41IiByPSIxMi41Ij4KICAgICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsLW9wYWNpdHkiCiAgICAgICAgIGJlZ2luPSI0MDBtcyIgZHVyPSIxcyIKICAgICAgICAgdmFsdWVzPSIxOy4yOzEiIGNhbGNNb2RlPSJsaW5lYXIiCiAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9jaXJjbGU+CiAgICA8Y2lyY2xlIGN4PSIxMi41IiBjeT0iOTIuNSIgcj0iMTIuNSI+CiAgICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbC1vcGFjaXR5IgogICAgICAgICBiZWdpbj0iNzAwbXMiIGR1cj0iMXMiCiAgICAgICAgIHZhbHVlcz0iMTsuMjsxIiBjYWxjTW9kZT0ibGluZWFyIgogICAgICAgICByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz4KICAgIDwvY2lyY2xlPgogICAgPGNpcmNsZSBjeD0iNTIuNSIgY3k9IjkyLjUiIHI9IjEyLjUiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwtb3BhY2l0eSIKICAgICAgICAgYmVnaW49IjUwMG1zIiBkdXI9IjFzIgogICAgICAgICB2YWx1ZXM9IjE7LjI7MSIgY2FsY01vZGU9ImxpbmVhciIKICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+CiAgICA8L2NpcmNsZT4KICAgIDxjaXJjbGUgY3g9IjkyLjUiIGN5PSI5Mi41IiByPSIxMi41Ij4KICAgICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsLW9wYWNpdHkiCiAgICAgICAgIGJlZ2luPSIyMDBtcyIgZHVyPSIxcyIKICAgICAgICAgdmFsdWVzPSIxOy4yOzEiIGNhbGNNb2RlPSJsaW5lYXIiCiAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogICAgPC9jaXJjbGU+Cjwvc3ZnPgo="></div>
+      <div id="overlay_box">
+         <div id="overlay_dialog">
+            <a href="#" class="close"></a>
+            <div id="overlay_title"></div>
+            <div id="overlay_main_img"></div>
+            <div id="overlay_narration_controls"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM10.622 8.415l4.879 3.252a.4.4 0 0 1 0 .666l-4.88 3.252a.4.4 0 0 1-.621-.332V8.747a.4.4 0 0 1 .622-.332z"/></svg></div>
+            <div id="overlay_scrollable_window">
+               <div class="overlay_scrollable_content" id="tab_1"></div>
+               <div class="overlay_scrollable_content" id="tab_2"></div>
+               <div class="overlay_scrollable_content" id="tab_3"></div>
+               <div class="overlay_scrollable_content" id="tab_4"></div>
+               <div class="overlay_scrollable_content" id="tab_5"></div>
+            </div>
+            <div id="overlay_tab_switcher">
+               <a href="#" class="tab_switcher" data-tab="1"><img src="img/tab_people.svg" alt="People"></a>
+               <a href="#" class="tab_switcher" data-tab="2"><img src="img/tab_story.svg" alt="Story"></a>
+               <a href="#" class="tab_switcher" data-tab="3"><img src="img/tab_quiz.svg" alt="Quiz"></a>
+               <a href="#" class="tab_switcher" data-tab="4" id="discussion_tile"><img src="img/tab_discuss.svg" alt="Discussion"></a>
+               <a href="#" class="tab_switcher" data-tab="5" id="sponsor_tile"><!-- sponsor logo will be swapped in here --></a>
+            </div><!-- overlay_tab_switcher -->
+         </div><!-- overlay_dialog -->
+      </div><!-- overlay_box -->
+         <div id="zoom_buttons"><button id='zoom_in' class="greyout" aria-label="Zoom in" >&plus;</button><button id='zoom_out' aria-label="Zoom out">&minus;</button>
+         <button id='audio_mode_toggle' aria-label="Switch audio mode" class="material-icons">volume_up</button></div>
+      <div id="zoom_container">
+         <div id="map">
+               <div class="hotspot_container"></div>
+               <div id="thought_bubble_container">
+                  <div class="inner">
+                  This is a thought bubble text that will get swapped out
+                  </div>
+               </div><!-- thought_bubble_container -->
+         </div><!-- map -->
+      </div><!-- zoom_container -->
+      <div id="status_change_overlay"><div class='message'></div><div class='icon material-icons'></div></div>
+   </div><!-- viewport -->
+</body>
+</html>
