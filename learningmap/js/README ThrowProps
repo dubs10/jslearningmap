@@ -9,3 +9,4 @@ link to it in the index.html
 If you do have a licensed version, please put it here and replace the
 dummy file.
 
+In recent GreenSock releases ThrowProps has been renamed InertiaPlugin.
