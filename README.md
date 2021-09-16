@@ -59,46 +59,6 @@ You can see a couple of example JSON hotspot records from our live demo:
 - https://tldr.legal/files/resources_html/landlawmap2/content/hotspots/hs_familyhome.json
 
 
-### Directory structure
-
-#### js
-- interactivemap.js: main project code
-- go.js: launch and configuration code
-- JavaScript libraries used
-
-#### content/hotspots
-- hotspot_json.php: script to generate .json files from the database
-- database_config.php: configuration for database goes here
-- .htaccess file for filename rewriting to make the PHP script look like it is generating static json files
-
-#### content/sponsors
-- sponsor logos go here
-
-#### content/people
-- images of inhabitants go here
-
-#### css
-- style.css: main map CSS styles
-
-#### audio
-- introvoice.mp3: voice introduction to game
-- bgmusic.mp3: background music or sound effects
-- buzzer.wav: a buzzer sound to signify offline hotspots
-- hotspot audio narration files go here, named hs_XXXX.mp3 (where XXXX is the hotspot ID)
-
-#### img
-- five tab images for use in the dialog
-- thought_bubble.svg: blank thought bubble template
-- main map background image goes here
-- put any other misc images here 
-
-#### img/hotspots
-- all the individual hotspot images go here
-- any alternative version images for the dialog go here
-
-#### install
-- contains set-up SQL for installation. Delete once not needed.
-
 ### Content specifications and recommendations
 #### Background image for map
 A single large image without any of the hotspots visible.
@@ -158,6 +118,48 @@ Related table `learningmap_hotspot_people`  contains:
 - `description` varchar(255) : short person description
 - `image` varchar(255) : image filename of person portrait
 
+
+### Directory structure
+The files used by the Learning Map are organised like this:
+
+
+#### js
+- interactivemap.js: main project code
+- go.js: launch and configuration code
+- JavaScript libraries used
+
+#### content/hotspots
+- hotspot_json.php: script to generate .json files from the database
+- database_config.php: configuration for database goes here
+- .htaccess file for filename rewriting to make the PHP script look like it is generating static json files
+
+#### content/sponsors
+- sponsor logos go here
+
+#### content/people
+- images of inhabitants go here
+
+#### css
+- style.css: main map CSS styles
+
+#### audio
+- introvoice.mp3: voice introduction to game
+- bgmusic.mp3: background music or sound effects
+- buzzer.wav: a buzzer sound to signify offline hotspots
+- hotspot audio narration files go here, named hs_XXXX.mp3 (where XXXX is the hotspot ID)
+
+#### img
+- five tab images for use in the dialog
+- thought_bubble.svg: blank thought bubble template
+- main map background image goes here
+- put any other misc images here 
+
+#### img/hotspots
+- all the individual hotspot images go here
+- any alternative version images for the dialog go here
+
+#### install
+- contains set-up SQL for installation. Delete once not needed.
 
 
 ## Installation
