@@ -58,14 +58,6 @@ You can see a couple of example JSON hotspot records from our live demo:
 - https://tldr.legal/files/resources_html/landlawmap2/content/hotspots/hs_redcottage.json
 - https://tldr.legal/files/resources_html/landlawmap2/content/hotspots/hs_familyhome.json
 
-## Installation
-Installation is currently a bit of a DIY affair :-)
-
-### You will need
-- a text editor for editing configuration files
-- an empty MySQL / MariaDB database
-- a SQL client or front-end for entering data and text into the database. PHPMyAdmin would work well for this.
-- A standard LAMP web-server 
 
 ### Directory structure
 
@@ -124,25 +116,6 @@ Video should be uploaded to Vimeo in whatever formats they accept.
 Stories and quizzes should be composed as HTML. The HTML is stored in the database in the relevant fields.
 Quiz answers should be wrapped in double square brackets. This indicates they are to be blurred out.
 
-### Database table structure
-Table `learningmap_hotspot_main` contains:
-- `hotspotID` varchar(255) : unique string identifier for hotspot, matching entry definition in map configuration 
-- `placeName` varchar(255) : human name for the hotspot
-- `subtitle` text : subtitle or description 
-- `story` text : HTML background story or main text for the hotspot
-- `quiz` text : HTML quiz for the hotspot
-- `video` int(11) : Vimeo video number or zero if none
-- `sponsorName` varchar(255) : hotspot sponsor name, or empty if none,
-- `sponsorLogo` varchar(255) : sponsor logo file, or empty if none
-- `sponsorText` text : short sponsorship description
-
-Related table `learningmap_hotspot_people`  contains: 
-- `id` int(11) : primary key for people records
-- `belongsTo` varchar(255) : related to hotspot in main table with hotspotID matching this
-- `name` varchar(255) : person's name
-- `description` varchar(255) : short person description
-- `image` varchar(255) : image filename of person portrait
-
 
 ### Metadata for each hotspot
 #### Required metadata 
@@ -164,6 +137,37 @@ Each inhabitant has a record in the "people" table in the database containing:
 - Inhabitant description
 - Inhabitant image filename. Upload a small JPEG or PNG of constant height to the content/people/ directory. Store only the filename in the database.
 
+### Database table structure
+Here how this metadata mentioned above is stored in MySQL tables.
+
+Table `learningmap_hotspot_main` contains:
+- `hotspotID` varchar(255) : unique string identifier for hotspot, matching entry definition in map configuration 
+- `placeName` varchar(255) : human name for the hotspot
+- `subtitle` text : subtitle or description 
+- `story` text : HTML background story or main text for the hotspot
+- `quiz` text : HTML quiz for the hotspot
+- `video` int(11) : Vimeo video number or zero if none
+- `sponsorName` varchar(255) : hotspot sponsor name, or empty if none,
+- `sponsorLogo` varchar(255) : sponsor logo file, or empty if none
+- `sponsorText` text : short sponsorship description
+
+Related table `learningmap_hotspot_people`  contains: 
+- `id` int(11) : primary key for people records
+- `belongsTo` varchar(255) : related to hotspot in main table with hotspotID matching this
+- `name` varchar(255) : person's name
+- `description` varchar(255) : short person description
+- `image` varchar(255) : image filename of person portrait
+
+
+
+## Installation
+Installation is currently a bit of a DIY affair :-)
+
+### You will need
+- a text editor for editing configuration files
+- an empty MySQL / MariaDB database
+- a SQL client or front-end for entering data and text into the database. PHPMyAdmin would work well for this.
+- A standard LAMP web-server 
 
 ### Installation steps
 1. Copy the files to your webserver.
