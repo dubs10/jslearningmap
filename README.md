@@ -192,9 +192,9 @@ database tables. This will create one table for "main" hotspot content and one f
 16. We can now test the whole map. Browse to /index.html on your webserver to try the map out. It should preload all your hotspot images, the map and the introduction narration. If everything loads successfully there should appear a start button that will launch the introduction.
 
 ### Troubleshooting 
-If the loading stalls, open the developer console, choose the Network tab and reload the page. You need to make sure there aren't any 404 errors. Correct any missing or wrongly named files, if there are. 
+If the loading stalls, open the browser developer console, choose the Network tab and reload the page. You need to make sure there aren't any 404 errors. Correct any missing or wrongly named files, if there are. 
 
-If nothing is happening at all, open the developer console on the Console tab and check for JavaScript errors. You may have errors in your configuration/launch file (go.js).
+If nothing is happening at all, open the browser developer console on the Console tab and check for JavaScript errors. You may have errors in your configuration/launch file (go.js).
 
 If the game is launching but a hotspot cannot be found when clicked, make sure that there is a record matching each unique hotspot ID in the database. If you want to include a hotspot in the configuration but the content isn't ready in the database yet, mark the hotspot as being offline in the configuration by adding "offline: true" to its definition.
 
