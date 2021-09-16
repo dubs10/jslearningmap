@@ -12,6 +12,6 @@ $dbHost = "";
 $dbUser = "";
 $dbPassword = "";
 $dbDatabase = "";
-$dbTable = "landlaw_hotspot_main"; // change if yours is different
-$dbTablePeople = "landlaw_hotspot_people"; // change if yours is different
+$dbTable = "learningmap_hotspot_main"; // change if yours is different
+$dbTablePeople = "learningmap_hotspot_people"; // change if yours is different
 ?>

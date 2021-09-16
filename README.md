@@ -43,6 +43,7 @@ happening.
 It's early days on this project still, and we hope to be able to improve the friendliness of the installation and configuration 
 in the future. If you're stuck, you're welcome to get in contact with questions. We also welcome any patches, feature improvements
 and bugfixes you may be able to contribute.
+You can contact the developer at https://sqtl.co.uk
 
 ## Optional GreenSock map / text-scrolling inertia 
 The project can make use of an optional GreenSock ThrowProps library (now "InertiaPlugin").  Without it, map and text scrolling won't keep moving when you let go of a move gesture.
@@ -106,7 +107,7 @@ Installation is currently a bit of a DIY affair :-)
 #### install
 - contains set-up SQL for installation. Delete once not needed.
 
-### Content format specifications and recommendations
+### Content specifications and recommendations
 #### Background image for map
 A single large image without any of the hotspots visible.
 #### Hotspot images
@@ -124,6 +125,7 @@ Stories and quizzes should be composed as HTML. The HTML is stored in the databa
 Quiz answers should be wrapped in double square brackets. This indicates they are to be blurred out.
 
 ### Database table structure
+
 
 
 ### Metadata for each hotspot
@@ -220,9 +222,7 @@ The optional GreenSock ThrowProps (now "InertiaPlugin") library is released unde
 
 ## Still to do
 - replace propriatory webfont references
-- remove discussion field from db and CREATE SQL
 - standardise on hotspotID for linking tables and do away with numeric id
 - move sponsor logos from "uploads" directory to content/sponsors directory
 - add in alt tag for people images
-- rename two database tables to something more generic, removing the word landlaw. 
 - tidy and reformat the CSS
