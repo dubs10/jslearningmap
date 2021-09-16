@@ -243,7 +243,6 @@ The optional GreenSock ThrowProps (now "InertiaPlugin") library is released unde
 
 
 ## Still to do
-- replace propriatory webfont references
 - move sponsor logos from "uploads" directory to content/sponsors directory
 - add in alt tag for people images
 - tidy and reformat the CSS
