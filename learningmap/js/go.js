@@ -19,6 +19,7 @@ $(document).ready(function() {
        The hotspotBaseURL is the stem for fetching the JSON data that matches the ids of each hotspot. 
        It can be a relative or absolute path on the same domain.
        The data returned will include the story, quiz and extras for each hotspot, individually requested.
+       This needs to end in a trailing slash.
        */
       hotspotBaseURL: '/content/hotspots/',
       
@@ -36,9 +37,11 @@ $(document).ready(function() {
          The JSON data will probably be dynamically generated from an SQL database.
        */
       hotspotConfig: [
+      /* eg:
       { id:"redhouse", imgSrc:"img/hotspots/example1.png", x:2138, y:1114, offline: true },
       { id:"greenhouse", imgSrc:"img/hotspots/example2.png", separateDialogImgSrc:"img/hotspots/example2dialog.png", x:1692, y:1112 },
       { id:"shops", imgSrc:"img/hotspots/example3.png", x:1679, y:1103 }
+      */
       ],
       
        /* thoughtBubbles is an array of thought bubble objects, each with the following properties:
@@ -47,8 +50,10 @@ $(document).ready(function() {
         text                  = the text that is displayed in the thought bubble when activated
        */
       thoughtBubbles: [
+      /* eg:
          { x:1125, y:1975, diameterX: 250, diameterY:120 ,text: "Example thought 1" },
          { x:0865, y:1617, diameterX: 100, diameterY:120 ,text: "Example thought 2 etc" }
+      */
       ] ,
       
       // thoughtBubblePosYOffset = num of pixels to offset thought bubble from centre on Y-axis. Depends on size of thought bubble image. 
