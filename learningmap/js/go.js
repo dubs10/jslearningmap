@@ -35,9 +35,12 @@ $(document).ready(function() {
          the server under hotspotBaseURL/hs_<id>.json
          where hotspotBaseURL is as defined above and <id> matches the id name given below.
          The JSON data will probably be dynamically generated from an SQL database.
+         
+         Some example data is given in the comment below:
+         
        */
       hotspotConfig: [
-      /* eg:
+      /* 
       { id:"redhouse", imgSrc:"img/hotspots/example1.png", x:2138, y:1114, offline: true },
       { id:"greenhouse", imgSrc:"img/hotspots/example2.png", separateDialogImgSrc:"img/hotspots/example2dialog.png", x:1692, y:1112 },
       { id:"shops", imgSrc:"img/hotspots/example3.png", x:1679, y:1103 }
@@ -48,9 +51,11 @@ $(document).ready(function() {
         x, y                  = coords are top left corner of the hotspot. These can be read off directly from GIMP or a similar image editor, if you open the background map in it.
         diameterX, diameterY  = defines the circle or oval size : These can be read off directly from GIMP elliptical select tool, or similar.
         text                  = the text that is displayed in the thought bubble when activated
+        
+        Some example data is given in the comment below:
        */
       thoughtBubbles: [
-      /* eg:
+      /* 
          { x:1125, y:1975, diameterX: 250, diameterY:120 ,text: "Example thought 1" },
          { x:0865, y:1617, diameterX: 100, diameterY:120 ,text: "Example thought 2 etc" }
       */
