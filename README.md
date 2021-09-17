@@ -2,7 +2,7 @@ JavaScript Learning Map
 =================================
 
 ## Description
-The Learning Map is a simple interactive JavaScript game which presents the user with a scrollable map with overlaid hotspots. The hotspots when clicked
+The JavaScript Learning Map is a simple interactive browser game which presents the user with a scrollable map with overlaid hotspots. The hotspots when clicked
 will open up a dialog window where further details can be presented, including text, video, audio (narration) and a self-assessment quiz. This lets the 
 teacher present puzzles in a visual context, check their own answers, and then view a discussion video about the solution.
 
