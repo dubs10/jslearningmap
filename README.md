@@ -236,7 +236,7 @@ The Learning Map makes use of the following other great software and libraries:
 
 ## Licence
 
-The Learning Map and its demo content are released under the Creative Commons XXXX-TODO--XXXX licence.
+The Learning Map and its demo content are released under the [Creative Commons Attribution Non-Commercial licence](https://creativecommons.org/licenses/by/4.0/)
 The bundled howler.js, Vimeo and JQuery libraries are released under the MIT License.
 GreenSock libraries are released under the [GreenSock "No Charge" Licence](https://greensock.com/standard-license/)
 The optional GreenSock ThrowProps (now "InertiaPlugin") library is released under a paid propriatory GreenSock licence. You must licence and link this in yourself if you want to make use of it. No copy is bundled with this project.
