@@ -207,7 +207,7 @@ the code comments in js/go.js.
 
 ## Launching the map from another web page
 Because the map currently is at a fixed size and resolution, it's is best launched as a separate browser window with pre-determined dimensions.
-You can do this with JavasScript, eg:
+You can do this with JavaScript, eg:
 `window.open('https://url.to/game', '_blank', 'width=1200, height=679')`
 The dimensions of 1200 x 679 have been found to work well with the game currently.
 
