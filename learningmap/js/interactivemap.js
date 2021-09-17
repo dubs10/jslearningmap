@@ -1,5 +1,5 @@
 /* 
- * Interactive Learning map 1.5 
+ * Interactive Learning map 1.6
  * by Howard Richardson
  * www.sqtl.co.uk
  * 
@@ -14,7 +14,7 @@
       1.2 : Added in optional fifth sponsor tab with logo and panel text 
       1.3 : Optional configurable thought bubbles that appear on mouse hover and zoom to visibility when clicked
       1.4 : Separated out more configurable common stuff. Moved icons to icon font instead of emojis. Some renaming of things. Small bugfixes and improvements to vimeo integration.
-      1.5 : Rationalized a lot of the naming. Removed more propriatory stuff.
+      1.5 : Rationalized a lot of the naming. Removed more propriatory stuff. Removed unnecessary database fields.
       1.6 : Prepared everything for first public github release.
   
   
