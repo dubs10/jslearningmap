@@ -26,9 +26,8 @@
   
   
   - Standardise variable, function and property naming conventions
-      - All CSS : lowercase_with_underscores
-      - All variables and functions : camelCase
-      - All HTML IDs : lowercase_with_underscores
+      - DOM IDs and classes : lowercase_with_underscores
+      - Variables and functions : camelCase
   
   */
 
