@@ -226,13 +226,14 @@ we are prevented from sharing it with you.
 - Make the transparent parts of hotspot images non-clickable, so we can have non-rectangular hotspots.
 - Improve the clarity and organisation of the documentation
 
-## Dependencies
-The Learning Map makes use of the following other great software and libraries:
+## Dependencies / Credits
+The Javascript Learning Map makes use of:
 
 - [JQuery](https://jquery.com)
 - [howler.js](https://howlerjs.com) for audio 
 - [Vimeo player](https://github.com/vimeo/player.js/) for controlling the videos 
 - [GreenSock](https://greensock.com) for animation and map movement
+- [Google material icons](https://fonts.google.com/icons)
 
 ## Licence
 
