@@ -247,3 +247,4 @@ The optional GreenSock ThrowProps (now "InertiaPlugin") library is released unde
 - move sponsor logos from "uploads" directory to content/sponsors directory
 - add in alt tag for people images
 - tidy and reformat the CSS
+- rename go.js something like map-config.js to better reflect its purpose
