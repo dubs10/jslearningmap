@@ -2,9 +2,11 @@ JavaScript Learning Map
 =================================
 
 ## Description
-The Learning Map is a simple interactive JavaScript "game" which presents the user with a scrollable map with overlaid hotspots. The hotspots when clicked
-will open up a dialog window where further details can be presented, including text, video, audio (narration) and a self-assessment quiz. 
-The map was originally designed to provide an interactive home for degree-level Land Law problem questions for the Law School of City, University of London.
+The Learning Map is a simple interactive JavaScript game which presents the user with a scrollable map with overlaid hotspots. The hotspots when clicked
+will open up a dialog window where further details can be presented, including text, video, audio (narration) and a self-assessment quiz. This lets the 
+teacher present puzzles in a visual context, check their own answers, and then view a discussion video about the solution.
+
+The Learning Map was originally designed to provide an interactive home for degree-level Land Law problem questions for the Law School of City, University of London.
 As such, some of the features were hard-coded with this set-up in mind, but there is enough flexibility for it to be reconfigured for different purposes.
 
 
