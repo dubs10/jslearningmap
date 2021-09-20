@@ -142,7 +142,7 @@ The files used by the Learning Map are organised like this:
 - images of inhabitants go here
 
 #### css
-- style.css: main map CSS styles
+- `style.css`: all CSS styles used in the game
 
 #### audio
 - `introvoice.mp3` voice introduction to game
@@ -152,7 +152,7 @@ The files used by the Learning Map are organised like this:
 
 #### img
 - five tab images for use in the dialog
-- thought_bubble.svg: blank thought bubble template
+- `thought_bubble.svg` blank thought bubble template
 - main map background image goes here
 - put any other misc images here 
 
