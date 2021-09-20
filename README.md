@@ -126,14 +126,14 @@ The files used by the Learning Map are organised like this:
 
 
 #### js
-- interactivemap.js: main project code
-- go.js: launch and configuration code
-- JavaScript libraries used
+- `interactivemap.js` main game code
+- `go.js` launch and configuration 
+- JavaScript libraries used go here
 
 #### content/hotspots
-- hotspot_json.php: script to generate .json files from the database
-- database_config.php: configuration for database goes here
-- .htaccess file for filename rewriting to make the PHP script look like it is generating static json files
+- `hotspot_json.php` script to generate .json files from the database
+- `database_config.php` configuration for database goes here
+- `.htaccess` file for URL rewriting to make the PHP script look like it is generating static json files
 
 #### content/sponsors
 - sponsor logos go here
@@ -145,9 +145,9 @@ The files used by the Learning Map are organised like this:
 - style.css: main map CSS styles
 
 #### audio
-- introvoice.mp3: voice introduction to game
-- bgmusic.mp3: background music or sound effects
-- buzzer.wav: a buzzer sound to signify offline hotspots
+- `introvoice.mp3` voice introduction to game
+- `bgmusic.mp3` background music or sound effects
+- `buzzer.wav` a buzzer sound to signify offline hotspots
 - hotspot audio narration files go here, named hs_XXXX.mp3 (where XXXX is the hotspot ID)
 
 #### img
