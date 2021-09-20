@@ -100,7 +100,7 @@ Each inhabitant has a record in the "people" table in the database containing:
 - Inhabitant image filename. Upload a small JPEG or PNG of constant height to the content/people/ directory. Store only the filename in the database.
 
 ### Database table structure
-Here how this metadata mentioned above is stored in MySQL tables.
+Here's how this metadata mentioned above is stored in MySQL tables.
 
 Table `learningmap_hotspot_main` contains:
 - `hotspotID` varchar(255) : unique string identifier for hotspot, matching entry definition in map configuration 
